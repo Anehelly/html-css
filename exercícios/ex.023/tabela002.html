@@ -8,9 +8,16 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         thead, tfoot{
-            background-color: dimgray;
+            background-color: rgb(123, 121, 121);
             color: white;
         }
         tr.legenda{
@@ -31,10 +38,13 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
  <table>
+    <caption>
+        Lista de unidades federativas do Brasil por população.
+    </caption>
     <thead>
         <tr class="legenda">
-            <td>Estado</td>
-            <td>População</td>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </tr>
     </thead>
     <tbody>

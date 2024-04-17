@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+ <h1>Exemplo de formulário</h1>
+ <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="iest">Estado</label>
+
+        <select name="estado" id="iest">
+
+            <option value="" selected>-----Escolha-----</option><!--OU EU POSSO USAR ASSIM PARA QUE FIQUE A PALAVRA "ESCOLHA" NO CAMPO DE SELEÇÃO-->
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP" >São Paulo</option><!--Posso usar um SELECTED EM ALGUM DESSES PARA INICIAL COM ESSE NO CAMPO DE ESCOLHA-->
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+            
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof"> <!--COLOCAR O ELEMENTO LIST COM O ID DO DATALIST PARA QUANDO CLICAR MOSTRAR AS OPÇÕES-->
+        <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="PROF">Professor</option>
+            <option value="ADS">Desenvolvedor</option>
+            <option value="CONT">Contabilista</option>
+        </datalist>
+
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem</label><br>
+        <textarea name="imsg" id="imsg" cols="30" rows="10"></textarea>
+        <!--Passou de 3mil bytes utiliza o method post-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+ </form>   
+</body>
+</html>

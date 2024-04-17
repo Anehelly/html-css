@@ -9,7 +9,7 @@
  <h1>Exemplo de formulário</h1>
  <form action="cadastro.php" method="post" autocomplete="on">
     <p>
-        <label for="iest">Estado</label>
+        <label for="iest">Estado:</label>
 
         <select name="estado" id="iest">
 
@@ -30,7 +30,7 @@
     </p>
 
     <p>
-        <label for="iprof">Profissão</label>
+        <label for="iprof">Profissão:</label>
         <input type="text" name="prof" id="iprof" list="lstprof"> <!--COLOCAR O ELEMENTO LIST COM O ID DO DATALIST PARA QUANDO CLICAR MOSTRAR AS OPÇÕES-->
         <datalist id="lstprof">
             <option value="ADM">Administrador</option>
@@ -42,7 +42,7 @@
     </p>
 
     <p>
-        <label for="imsg">Mensagem</label><br>
+        <label for="imsg">Mensagem:</label><br>
         <textarea name="imsg" id="imsg" cols="30" rows="10"></textarea>
         <!--Passou de 3mil bytes utiliza o method post-->
     </p>

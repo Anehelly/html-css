@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .profile-pic {
@@ -16,7 +16,8 @@ body {
 }
 
 .profile-pic img {
-    width: 200px; /* Largura da foto */
+    max-width: 100%; /* Largura máxima da foto */
+    max-height: 100%; /* Altura máxima da foto */
     height: auto;
     border-radius: 50%; /* Para uma foto redonda */
 }
@@ -46,6 +47,21 @@ p {
     border-radius: 5px; /* Arredondar bordas */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Alinhar verticalmente em dispositivos móveis */
+        text-align: center; /* Centralizar o conteúdo em dispositivos móveis */
+    }
+
+    .profile-pic {
+        margin-bottom: 20px; /* Espaçamento entre a foto e a bio em dispositivos móveis */
+    }
+
+    .bio {
+        max-width: 100%; /* Largura máxima da bio em dispositivos móveis */
+    }
 }
 
 

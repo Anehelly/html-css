@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+
+:root{
+    --fonte-destaque: "Montserrat", sans-serif;
+   
+}
+
+body{
+    background-color: #D5EAF2;
+}
+
+#principal{
+    margin: auto;    
+    width: 60%;
+    height: 250px;
+    margin-top: 20px;   
+    
+}
+
+#principal{
+    position: fixed; /* ou absolute */
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding-right: 15px;
+    
+}
+
+div > h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 50px;
+    font-weight: lighter;
+    
+}
+
+div > p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-indent: 20px;
+    
+}
+
+#botao{
+    background-color: #A6523F; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    
+}
+
+.botao:hover {
+    background-color: #D5EAF2; /* Cor de fundo ao passar o mouse */
+}
+
+#foto{
+    padding: 20px;
+    margin:60px;
+    
+    
+}
+
+
+

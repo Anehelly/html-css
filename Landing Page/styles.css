@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-pic {
+    margin-right: 20px; /* Espaçamento entre a foto e a bio */
+}
+
+.profile-pic img {
+    width: 200px; /* Largura da foto */
+    height: auto;
+    border-radius: 50%; /* Para uma foto redonda */
+}
+
+.bio {
+    max-width: 400px; /* Largura máxima da bio */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #A83D58;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#botao{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A83D58; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado do link */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Arredondar bordas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+
+
+
+

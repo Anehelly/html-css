@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -63,8 +65,3 @@ p {
         max-width: 100%; /* Largura máxima da bio em dispositivos móveis */
     }
 }
-
-
-
-
-

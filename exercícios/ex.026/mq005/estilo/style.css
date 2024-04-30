@@ -20,8 +20,23 @@ header >h1{
     color: #592202;
 }
 
+span#burguer{
+    background-color: #9a3c05d3;    /*cor de fundo*/
+    display: block;/*ocupar todo o espaço*/
+    color: white;/*cor da letra*/
+    text-align: center;/*posição do texto*/
+    padding: 10px;
+    cursor: pointer;/*mudar o ponteiro*/
+}
+
+span#burguer:hover{/*quando passar o cursor por cima mudará de cor*/
+    background-color: rgba(255, 255, 255, 0.586);
+    color: #5a2303d3;
+}
+
 menu{
-    display: block;/*ocupa toda a largura disponível na linha em que está.*/
+    display: none;/*ocupa toda a largura disponível na linha em que está.*/
+    /*Inicialmente estava como block, mas para ficar só o menu hamburguer colocamos none para não aparecer*/
 
 }
 
@@ -55,7 +70,7 @@ main{
 article > h2{
     padding-bottom: 10px;/*Deu um espaço entre o h2 e o texto*/
     text-align: center;
-    color: #274001;
+    color: #4e8003;
 }
 
 article > p{
@@ -63,5 +78,11 @@ article > p{
     margin-bottom: 20px;/*espaço entre os parágrafos, na margem de baixo*/
     text-indent: 20px;/*criou o tab*/
 }
+
+/*#3E5902
+#F29F05
+#BF4904
+#D90404
+#400101*/
 
 

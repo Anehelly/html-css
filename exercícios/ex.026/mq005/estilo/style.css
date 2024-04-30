@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #F2BC79;
+}
+
+header{
+    background-color: #F2BD1D;/*cor de fundo*/
+}
+
+header >h1{
+    padding: 10px; /*espaço entre "meu site e a margem da caixa"*/
+    text-align: center;/*centralizar o texto*/
+    color: #592202;
+}
+
+menu{
+    display: block;/*ocupa toda a largura disponível na linha em que está.*/
+
+}
+
+menu > ul{
+    list-style-type: none; /*Tirou as bolinhas dos links*/
+}
+
+menu > ul >li >a{
+    display: block;
+    padding: 10px; /*espaço entre as opções*/
+    text-decoration: none;/*tirou o sublinhado*/
+    background-color: #d8a91c;/*cor de fundo*/
+    color: white;/*cor da fonte*/
+    text-align: center;/*centralizou*/
+    border-top: 2px solid #5922028e;/*criou as bordas na parte de cima de cada opção*/
+} 
+
+menu > ul >li >a:hover{
+    background-color: #2740018b; /*muda a cor de fundo ao passar o mouse por cima*/
+}
+
+main{
+    width: 90vw; /*90% da largura*/
+    background-color: white;
+    margin: auto;/*centralizar*/
+    padding: 10px;/*espaço entre o texto e as margens da caixa*/
+    border-radius: 10px;/*arredondou as bordas*/
+    margin-top: 10px;/*Deu um espaço entre a caixa do main e as opções*/
+}
+
+article > h2{
+    padding-bottom: 10px;/*Deu um espaço entre o h2 e o texto*/
+    text-align: center;
+    color: #274001;
+}
+
+article > p{
+    text-align: justify; /*Posição do texto*/
+    margin-bottom: 20px;/*espaço entre os parágrafos, na margem de baixo*/
+    text-indent: 20px;/*criou o tab*/
+}
+
+

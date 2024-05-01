@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+
+    span#burguer{
+        display: none;
+    }/*tirar o icone de menu*/
+
+    menu{
+        display: block;
+    }/*mostrar os itens do menu*/
+
+    menu> ul> li{
+        display: inline-block;
+    }/*mostrar os itens do menu lado ao lado*/
+
+    main{
+        width: 768px;
+    }/*Limitou o conteudo para não ficar tão largo*/
+
+}
+
